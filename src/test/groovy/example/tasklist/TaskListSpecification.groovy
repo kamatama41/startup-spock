@@ -22,9 +22,9 @@ class TaskListSpecification extends Specification {
         taskList.addTask("タイトル2",new Date(2017, 2, 26))
 
         then:"最初の検証"
-        taskList.getAllTasks().get(0).getTitle() == "タイトル1"
-        taskList.getAllTasks().get(0).getDueTo() == new Date(2017, 2, 25)
-        taskList.getAllTasks().get(1).getTitle() == "タイトル2"
-        taskList.getAllTasks().get(1).getDueTo() == new Date(2017, 2, 26)
+        taskList.getAllTasks()[0].getTitle() == "タイトル1"
+        taskList.getAllTasks()[0].getDueTo() == new Date(2017, 2, 25)
+        taskList.getAllTasks()[1].getTitle() == "タイトル2"
+        taskList.getAllTasks()[1].getDueTo() == new Date(2017, 2, 26)
     }
 }
