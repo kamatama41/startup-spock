@@ -29,6 +29,7 @@ class FixtureMethod extends Specification{
   }
 
   def "test2"(){
-    // TODO これをテストとして動かしてfixtureのprintを確認しよう
+    expect:
+    FizzBuzz.say(3) == "Fizz"
   }
 }
