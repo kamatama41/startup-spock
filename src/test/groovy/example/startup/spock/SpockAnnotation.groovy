@@ -1,5 +1,6 @@
 package example.startup.spock
 
+import spock.lang.Ignore
 import spock.lang.Shared
 import spock.lang.Specification
 import spock.lang.Unroll
@@ -31,18 +32,20 @@ class SpockAnnotation extends Specification{
     1 | "1"
     2 | "2"
     3 | "Fizz"
-    4 | ""
-    5 | ""
-    15 | ""
+    4 | "4"
+    5 | "Buzz"
+    15 | "FizzBuzz"
   }
 
-
+  @Ignore
   def "should be ignore"(){
     expect:
     assert false, "メソッドに@Ignoreをつけて実行されないようにしましょう(spock.lang.Ignoreを使ってね!)"
   }
 
+  @Shared
   def eachSpecificationDate = Calendar.getInstance()
+  @Shared
   def eachFeatureDate = Calendar.getInstance()
 
   def "test1 eachSpecificationDateに@Sharedをつけると1度だけ初期化される"(){
