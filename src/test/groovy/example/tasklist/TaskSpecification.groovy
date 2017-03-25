@@ -9,6 +9,6 @@ class TaskSpecification extends Specification {
         task.setTitle("タイトルです")
 
         then:"最初の検証"
-        task.getTitle == "タイトルです"
+        task.getTitle() == "タイトルです"
     }
 }
