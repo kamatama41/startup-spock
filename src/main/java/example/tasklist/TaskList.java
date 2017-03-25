@@ -5,8 +5,7 @@ import java.util.Date;
 
 public class TaskList {
 
-    private Task task = new Task();
-    Task tasks[] = new Task[2];
+    private Task tasks[] = new Task[2];
 
     public void addTask(String title, Date dueTo) {
         Task task = new Task();
