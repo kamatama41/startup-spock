@@ -12,10 +12,6 @@ public class TaskList {
         task.setDueTo(dueTo);
     }
 
-    public Task getTask() {
-        return task;
-    }
-
     public Task[] getAllTasks(){
         Task tasks[];
         tasks = new Task[2];
