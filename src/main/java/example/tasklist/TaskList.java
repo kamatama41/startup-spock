@@ -4,13 +4,17 @@ package example.tasklist;
 import java.util.Date;
 
 public class TaskList {
+
+    Task task = new Task();
+
     public void addTask(String title, Date dueTo) {
+        task.setTitle(title);
+        task.setDueTo(dueTo);
     }
 
     public Task getTask() {
-        Task task = new Task();
-        task.setTitle("タイトルです");
-        task.setDueTo(new Date(2017, 2, 25));
+        task.setTitle(task.getTitle());
+        task.setDueTo(task.getDueTo());
         return task;
     }
 }
