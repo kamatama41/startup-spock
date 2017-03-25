@@ -12,7 +12,7 @@ class UseSpecification extends Specification{
   }
 }
 
-class SomeSpecification {
+class SomeSpecification extends Specification {
   def "このメソッドをテストとして動作するようにしよう"(){
     expect:"expectはspockのラベルです"
     assert 1 == 1
