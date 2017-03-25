@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class TaskList {
 
-    Task task = new Task();
+    private Task task = new Task();
 
     public void addTask(String title, Date dueTo) {
         task.setTitle(title);
@@ -13,8 +13,6 @@ public class TaskList {
     }
 
     public Task getTask() {
-        task.setTitle(task.getTitle());
-        task.setDueTo(task.getDueTo());
         return task;
     }
 }
